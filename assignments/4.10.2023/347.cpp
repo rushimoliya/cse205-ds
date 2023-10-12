@@ -6,10 +6,10 @@ public:
         for (int x: nums) map[x]++;
         int maxm = INT_MIN;
 
-        unordered_map <int, vector<int>> newmap;
+        unordered_map <int, vector<int>> nmap;
 
         for (pair<int, int> p: map) {
-            newmap[p.second].push_back( p.first);
+            nmap[p.second].push_back( p.first);
             maxm = max (maxm, p.second);
         }
         vector<int> ans;
